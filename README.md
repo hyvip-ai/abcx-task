@@ -8,7 +8,7 @@ Live Link : https://abcx-task.netlify.app/
 
 !["Login Page"](https://i.ibb.co/FK8JL2y/image.png 'Login')
 
-This is the login page it has two fields email and password, and both had validations which is done using _YUP_ and used _react-hook-form_ for form integrations and used custom component for Inputs, used _Form Context_ to show the errors (show in the next image)
+This is the login page which has the routing of `/login` and it has two fields email and password, and both had validations which is done using _YUP_ and used _react-hook-form_ for form integrations and used custom component for Inputs, used _Form Context_ to show the errors (show in the next image)
 
 !["Erros"](https://i.ibb.co/X5G1hwB/image.png 'Errors')
 
@@ -20,7 +20,7 @@ Have Email validation and show, hide button for password
 
 !["cards"](https://i.ibb.co/VtFjBnT/image.png 'cards')
 
-As we can see here this page has the routing of `\cards` which contains two cards with content _A_ and _B_, upon click any one of this we will redirected to the details page where it will show which card is selected.
+As we can see here this page has the routing of `/cards` which contains two cards with content _A_ and _B_, upon click any one of this we will redirected to the details page where it will show which card is selected.
 
 ## step 3 - card detail
 
