@@ -40,17 +40,21 @@ function Login() {
   };
 
   return (
-    <Container className='my-container'>
-      <FormProvider control={control} register={register} errors={errors}>
-        <Form onSubmit={handleSubmit(onSubmit)}>
-          <Input placeholder='Email' label='Email' name='email' />
-          <Password placeholder='Password' name='password' />
-          <Button type='submit' variant='primary' className='mx-auto d-block'>
-            Submit
-          </Button>
-        </Form>
-      </FormProvider>
-    </Container>
+    <>
+      <Container className='my-container'>
+        <FormProvider control={control} register={register} errors={errors}>
+          <Form onSubmit={handleSubmit(onSubmit)}>
+            <h2 className='text-center mb-3'>Login</h2>
+
+            <Input placeholder='Email' label='Email' name='email' />
+            <Password placeholder='Password' name='password' />
+            <Button type='submit' variant='primary' className='mx-auto d-block'>
+              Submit
+            </Button>
+          </Form>
+        </FormProvider>
+      </Container>
+    </>
   );
 }
 
