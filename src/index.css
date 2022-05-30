@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,81 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.my-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+}
+
+form {
+  width: 100%;
+}
+
+.myCard {
+  height: 250px;
+  width: 250px;
+  margin: 2rem 2rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.myCard:first-child {
+  border-radius: 50px;
+  background: #ffe2a3;
+  box-shadow: 20px 20px 60px #d9c08b,
+    -20px -20px 60px #ffffbb;
+}
+
+.myCard:nth-child(2) {
+  border-radius: 50px;
+  background: #a8e5ff;
+  box-shadow: 20px 20px 60px #8fc3d9,
+    -20px -20px 60px #c1ffff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.myCard:active {
+  box-shadow: none;
+  transform: scale(0.95);
+}
+
+.selected {
+  font-size: 3rem;
+  font-family: 'Poppins';
+}
+
+.selected-wrapper {
+  height: 100vh;
+}
+
+.back {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  border-radius: 50% !important;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
