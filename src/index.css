@@ -90,3 +90,20 @@ form {
   width: 100%;
   object-fit: contain;
 }
+
+.noShadow {
+  box-shadow: none !important;
+}
+
+.input-group {
+  height: 58px;
+}
+
+.input-group-text {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent !important;
+}

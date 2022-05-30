@@ -9,7 +9,11 @@ function Details() {
 
   return (
     <div className='d-flex justify-content-center align-items-center selected-wrapper'>
-      <Button variant='info back' onClick={() => navigate('/cards')}>
+      <Button
+        variant='info back'
+        onClick={() => navigate('/cards')}
+        className='noShadow'
+      >
         <img src={Arrow} alt='arrow' />
       </Button>
       <div className='selected'>{searchParams.get('selected')} is selected</div>

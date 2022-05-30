@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FormControl, InputGroup } from 'react-bootstrap';
 import { useFormContext } from 'react-hook-form';
+import { EyeSlash, Eye } from 'react-bootstrap-icons';
 
 const Password = ({ name, placeholder }) => {
   const { register, errors } = useFormContext();
@@ -16,13 +17,14 @@ const Password = ({ name, placeholder }) => {
           {...register(name)}
           name={name}
           type={show ? 'text' : 'password'}
+          className='noShadow'
         />
         <InputGroup.Text
           id='basic-addon2'
           onClick={togglePassword}
           className='cursor-pointer'
         >
-          {show ? 'Hide' : 'Show'}
+          {!show ? <Eye size={25} /> : <EyeSlash size={25} />}
         </InputGroup.Text>
       </InputGroup>
       {errors[name] ? (

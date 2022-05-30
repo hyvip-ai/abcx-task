@@ -11,6 +11,7 @@ const Input = ({ name, placeholder, label }) => {
           placeholder={placeholder}
           name={name}
           {...register(name)}
+          className='noShadow'
         />
       </FloatingLabel>
       {errors[name] ? (
